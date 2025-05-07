@@ -40,6 +40,7 @@ def get_video(base_filename, video_object):
 
 def get_audio(base_filename, video_object):
     """Returns the audio track only of a video clip"""
+    os.makedirs('output', exist_ok=True)
     video_object.audio.write_audiofile(filename=f'output/{base_filename}_audio.wav')
     video_object.audio.write_audiofile(filename=f'output/{base_filename}_audio.mp3')
     print('get audio done')
