@@ -1,7 +1,7 @@
 import os
 import time
 
-url = "http://172.17.0.2:8000/video.zip"
+url = "http://192.168.13.2:8000/video.zip"
 
 for i in range(2):
    
